@@ -1,0 +1,23 @@
+modules:
+  macro:
+    - key: confluencemacrotype2-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: ConfluenceMacroType2
+      config: true
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/aef957f6-4a88-4ab2-a688-e49777349c5b
+permissions:
+  external:
+    images:
+      - '*'
