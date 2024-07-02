@@ -74,7 +74,7 @@ const App = () => {
               <LinkButton href={configValues.link}>Interested?</LinkButton>
             </Box>
             <Box>
-              <LinkButton href={configValues.sharelink}>Share</LinkButton>
+              <LinkButton href={configValues.share}>Share</LinkButton>
             </Box>
           </Inline>
         </Stack>
